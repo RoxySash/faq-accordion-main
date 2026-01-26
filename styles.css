@@ -92,6 +92,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .question {
     font-weight: 600;
     color: var(--purple-950);
+
     
 }
 .answer {
@@ -108,25 +109,25 @@ p, h1, h2, h3, h4, h5, h6 {
    
 }
 
-.accordion .accordion-title {
+ .accordion-title {
   margin-bottom: 30px;
   text-align: center;
 }
-.accordion .content-container .question {
+ .content-container .question {
   padding: 18px 0px;
   font-size: 16px;
   cursor: pointer;
   border-bottom: 1px solid lightgrey;
   position: relative;
 }
-.accordion .content-container .question::after {
+.content-container .question::after {
   content: url("./assets/images/icon-plus.svg");
   position: absolute;
   right: -5px;
   
 }
 
-.accordion .content-container .answer {
+.content-container .answer {
   padding-top: 15px;
   font-size: 16px;
   line-height: 1.5;
@@ -138,16 +139,16 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /*js styling link*/
-.accordion .content-container.active .answer {
+.content-container.active .answer {
   height: 200px;
 }
 
-.accordion .content-container.active .question {
+.content-container.active .question {
   font-size: 18px;
   transition: .5s;
 } 
 
-.accordion .content-container.active .question::after {
+.content-container.active .question::after {
   content: url("./assets/images/icon-minus.svg");
   font-size: 16px;
   transition: .5s;
