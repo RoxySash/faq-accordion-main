@@ -32,18 +32,16 @@ body {
   /* 4. Improve centering within parent */
   min-height: 100vh;
 	
-font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 16px;
   background-color: var(--purple-100);
- 
-
-   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 
 }
 
@@ -92,16 +90,19 @@ p, h1, h2, h3, h4, h5, h6 {
 .question {
     font-weight: 600;
     color: var(--purple-950);
+ 
 
     
 }
 .answer {
     font-weight: 400;
     color: var(--purple-600);
+    overflow: hidden;
+    display: none;
     
 }
 
-.accordion {
+.container {
     width: 65%;
     padding: 30px;
     border-radius: 15px;
@@ -113,46 +114,56 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   text-align: center;
 }
- .content-container .question {
+ .accordion .question {
   padding: 18px 0px;
   font-size: 16px;
   cursor: pointer;
   border-bottom: 1px solid lightgrey;
   position: relative;
+   
 }
-.content-container .question::after {
+
+.accordion .question::after {
   content: url("./assets/images/icon-plus.svg");
   position: absolute;
   right: -5px;
   
+  
 }
 
-.content-container .answer {
+.active.question::after {
+  content: url("./assets/images/icon-minus.svg");
+  
+  transition: .5s;
+ 
+}
+ .accordion .answer {
   padding-top: 15px;
   font-size: 16px;
   line-height: 1.5;
   width: 100%;
   
-  height: 0px;
-  overflow: hidden;
+ 
   transition: .5s;
 }
+
 
 /*js styling link*/
-.content-container.active .answer {
-  height: 200px;
+.accordion.active .answer {
+  height: 190px;
+ 
 }
 
-.content-container.active .question {
-  font-size: 18px;
-  transition: .5s;
+
+.accordion.active .question {
+
+  transition: .6s;
 } 
 
-.content-container.active .question::after {
-  content: url("./assets/images/icon-minus.svg");
-  font-size: 16px;
-  transition: .5s;
-}
+
+
+
+
 /*
 .hero-image {
     background-image: url("./assets/images/background-pattern-mobile.svg");
@@ -164,4 +175,5 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 */
+
 
