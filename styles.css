@@ -42,7 +42,13 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-
+  margin: auto;
+background-image: url("./assets/images/background-pattern-mobile.svg");
+    
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
 }
 
 /* 5. Improve media defaults */
@@ -103,10 +109,13 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    width: 65%;
+    width: 85%;
     padding: 30px;
     border-radius: 15px;
     background-color: var(--white);
+    z-index: 1;
+    border: 2px solid red;
+    
    
 }
 
@@ -164,16 +173,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 
-/*
+
 .hero-image {
-    background-image: url("./assets/images/background-pattern-mobile.svg");
-    height: 50px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    
+    
+    
+    
 }
 
-*/
+
 
 
