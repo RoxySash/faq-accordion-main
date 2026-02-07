@@ -41,13 +41,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
+
  
-  background-image: url("./assets/images/background-pattern-mobile.svg");
+ /* background-image: url("./assets/images/background-pattern-mobile.svg");
     
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    */
  
 }
 
@@ -109,11 +111,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    width: 60%;
-/* remove padding     padding: 30px;*/
+    max-width: 60%;
+   padding: 30px;
     border-radius: 15px;
     background-color: var(--white);
-    height: auto;
+    
+    
    
     
    
@@ -128,13 +131,13 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   cursor: pointer;
   border-bottom: 1px solid lightgrey;
-  position: absolute;
+  
    
 }
 
 .accordion .question::after {
   content: url("./assets/images/icon-plus.svg");
-  position: absolute;
+  
   right: -5px;
   
   
@@ -142,7 +145,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .active.question::after {
   content: url("./assets/images/icon-minus.svg");
-  position: absolute;
+ 
   transition: .5s;
  
 }
