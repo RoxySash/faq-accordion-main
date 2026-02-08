@@ -115,7 +115,7 @@ p, h1, h2, h3, h4, h5, h6 {
    padding: 30px;
     border-radius: 15px;
     background-color: var(--white);
-    
+    min-width: 350px;
     
    
     
@@ -172,7 +172,18 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: .6s;
 } 
 
+.hero-image {
+  width: 100%;
+  background-image: url(./assets/images/background-pattern-mobile.svg);
+  background-size: cover;
+}
 
+
+@media (min-width: 420px) {
+ body {
+  background-color: pink;
+ }
+}
 
 
 
