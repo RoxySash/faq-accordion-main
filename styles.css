@@ -41,15 +41,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  position: absolute;
  
- /* background-image: url("./assets/images/background-pattern-mobile.svg");
+ background-image: url("../assets/images/background-pattern-mobile.svg");
     
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     
-    */
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* background-position: top; not needed*/
+  
+    
+    
  
 }
 
@@ -125,7 +128,8 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 15px;
     background-color: var(--white);
     min-width: 350px;
-    
+   position: absolute;
+   z-index: 2;
    
     
    
@@ -181,13 +185,7 @@ p, h1, h2, h3, h4, h5, h6 {
   transition: .6s;
 } 
 
-.hero-image {
-  width: 100%;
-  background-image: url(./assets/images/background-pattern-mobile.svg);
-  background-size: cover;
-  display: block;
- 
-}
+
 
 
 @media (min-width: 420px) {
@@ -196,10 +194,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
   background-image: url(./assets/images/background-pattern-desktop.svg);
   background-size: cover;
-  
- 
+  position: absolute;
+ padding: 100px
 
  }
+ 
+ .container {
+  width: 60%;
+   position: relative;
+ }
+
 }
 
 
