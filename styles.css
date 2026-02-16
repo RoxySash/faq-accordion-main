@@ -7,6 +7,7 @@
   --purple-100: hsl(275, 100%, 97%);
   --purple-600: hsl(292, 16%, 49%);
   --purple-950: hsl(292, 42%, 14%);
+  --purple-650: #ad28eb;
 }
 
 /* ------------------- */
@@ -30,7 +31,6 @@ body {
   line-height: 1.5;
   /* 4. Improve centering within parent */
   min-height: 100vh;
-
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -43,7 +43,7 @@ body {
   background-image: url("../assets/images/background-pattern-mobile.svg");
   
   background-repeat: no-repeat;
-
+  
   /* background-position: top; not needed*/
 }
 
@@ -94,7 +94,6 @@ h6 {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: center;
-  border: 2px solid red;
   height: 50px;
 }
 
@@ -111,11 +110,15 @@ h6 {
 .question {
   font-weight: 600;
   color: var(--purple-950);
+  cursor: pointer;
+  
+  
 }
 
-.question:active {
-  cursor: pointer;
-  color: var(--purple-600);
+.question:hover {
+  
+  color: var(--purple-650);
+  transition: 0.10s;
 }
 
 .answer {
@@ -131,6 +134,7 @@ h6 {
   border-radius: 15px;
   background-color: var(--white);
   min-width: 350px;
+  
 }
 
 .accordion-title {
@@ -146,13 +150,12 @@ h6 {
 
 .accordion .question::after {
   content: url("./assets/images/icon-plus.svg");
-
-  right: -5px;
+  margin-right: 0;
+  
 }
 
 .active.question::after {
   content: url("./assets/images/icon-minus.svg");
-
   transition: 0.5s;
 }
 .accordion .answer {
@@ -160,7 +163,6 @@ h6 {
   font-size: 16px;
   line-height: 1.5;
   width: 100%;
-
   transition: 0.5s;
 }
 
@@ -177,12 +179,17 @@ h6 {
   body {
     background-image: url(./assets/images/background-pattern-desktop.svg);
     background-size: cover;
+    background-repeat: no-repeat;
     position: absolute;
-    padding: 100px;
+    padding: 150px;
+   
+    
   }
 
   .container {
-    width: 60%;
-    position: relative;
+    
+    max-width: 1440px;
+    width: 65%;
+    
   }
 }
