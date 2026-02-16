@@ -1,23 +1,22 @@
-
 /* ------------------- */
 /* Custom properties   */
 /* ------------------- */
 
 :root {
-    --white: hsl(0, 100%, 100%);
-    --purple-100: hsl(275, 100%, 97%); 
-    --purple-600: hsl(292, 16%, 49%);
-    --purple-950: hsl(292, 42%, 14%);
+  --white: hsl(0, 100%, 100%);
+  --purple-100: hsl(275, 100%, 97%);
+  --purple-600: hsl(292, 16%, 49%);
+  --purple-950: hsl(292, 42%, 14%);
 }
-
-
 
 /* ------------------- */
 /* Reset               */
 /* ------------------- */
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -31,7 +30,7 @@ body {
   line-height: 1.5;
   /* 4. Improve centering within parent */
   min-height: 100vh;
-	
+
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -41,40 +40,44 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
- 
- background-image: url("../assets/images/background-pattern-mobile.svg");
-    
-    
+  background-image: url("../assets/images/background-pattern-mobile.svg");
+  
   background-repeat: no-repeat;
-  background-size: cover;
-  
+
   /* background-position: top; not needed*/
-  
-    
-    
- 
 }
 
 /* 5. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 6. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
-
 /* remove animations for people who've turned them off */
-@media (prefers-reduced-motion: reduce) {  
+@media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
@@ -85,131 +88,101 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-
-.title-star {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+.title-and-star {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  border: 2px solid red;
+  height: 50px;
 }
+
+.star {
+  align-self: center;
+  padding-right: 15px;
+}
+
 .accordion-title {
-    font-weight: 700;
-    color: var(--purple-950);
+  font-weight: 700;
+  color: var(--purple-950);
 }
 
 .question {
-    font-weight: 600;
-    color: var(--purple-950);
- 
-
-    
+  font-weight: 600;
+  color: var(--purple-950);
 }
 
 .question:active {
-    cursor: pointer;
-    color: var(--purple-600);
- 
-
-    
+  cursor: pointer;
+  color: var(--purple-600);
 }
 
 .answer {
-    font-weight: 400;
-    color: var(--purple-600);
-    overflow: hidden;
-    display: none;
-    
+  font-weight: 400;
+  color: var(--purple-600);
+  overflow: hidden;
+  display: none;
 }
 
 .container {
-    max-width: 60%;
-   padding: 30px;
-    border-radius: 15px;
-    background-color: var(--white);
-    min-width: 350px;
-   position: absolute;
-   z-index: 2;
-   
-    
-   
+  max-width: 60%;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: var(--white);
+  min-width: 350px;
 }
 
- .accordion-title {
+.accordion-title {
   margin-bottom: 30px;
   text-align: center;
 }
- .accordion .question {
+.accordion .question {
   padding: 18px 0px;
   font-size: 16px;
   cursor: pointer;
   border-bottom: 1px solid lightgrey;
-  
-   
 }
 
 .accordion .question::after {
   content: url("./assets/images/icon-plus.svg");
-  
+
   right: -5px;
-  
-  
 }
 
 .active.question::after {
   content: url("./assets/images/icon-minus.svg");
- 
-  transition: .5s;
- 
+
+  transition: 0.5s;
 }
- .accordion .answer {
+.accordion .answer {
   padding-top: 15px;
   font-size: 16px;
   line-height: 1.5;
   width: 100%;
-  
- 
-  transition: .5s;
-}
 
+  transition: 0.5s;
+}
 
 /*js styling link*/
 .accordion.active .answer {
   height: 190px;
- 
 }
-
 
 .accordion.active .question {
-
-  transition: .6s;
-} 
-
-
-
-
-@media (min-width: 420px) {
- body {
-  
-
-  background-image: url(./assets/images/background-pattern-desktop.svg);
-  background-size: cover;
-  position: absolute;
- padding: 100px
-
- }
- 
- .container {
-  width: 60%;
-   position: relative;
- }
-
+  transition: 0.6s;
 }
 
+@media (min-width: 420px) {
+  body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-size: cover;
+    position: absolute;
+    padding: 100px;
+  }
 
-
-
-
-
-
-
+  .container {
+    width: 60%;
+    position: relative;
+  }
+}
