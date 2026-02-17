@@ -179,6 +179,10 @@ h6 {
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
    
    
     
@@ -188,6 +192,14 @@ h6 {
     
     max-width: 1440px;
     width: 100%;
+    
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
     
   }
 }
