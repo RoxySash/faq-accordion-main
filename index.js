@@ -7,7 +7,7 @@ for(i = 0; i < accordion.length; i++) {
     this.classList.toggle('active');
 
     /* Toggle between hiding and showing the active panel */
-    var answer = this.nextElementSibling;
+    let answer = this.nextElementSibling;
     if (answer.style.display === "block") {
       answer.style.display = "none";
     } else {
