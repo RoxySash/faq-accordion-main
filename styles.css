@@ -104,6 +104,8 @@ h6 {
 .accordion-title {
   font-weight: 700;
   color: var(--purple-950);
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .question {
@@ -136,10 +138,7 @@ h6 {
   
 }
 
-.accordion-title {
-  margin-bottom: 30px;
-  text-align: center;
-}
+
 .accordion .question {
   padding: 18px 0px;
   font-size: 16px;
