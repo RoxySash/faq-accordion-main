@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Link](https://github.com/RoxySash/faq-accordion-main.git)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://roxysash.github.io/faq-accordion-main/)
 
 ## My process
 
