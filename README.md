@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub Link](https://github.com/RoxySash/faq-accordion-main.git)
+- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
 
 ## My process
 
@@ -79,6 +79,7 @@ this.classList.toggle('active');
 
 I am excited to learn more about dropdown features on websites. I had trouble with CSS more than I had with JS which is fine I am still learning. I will work on making my CSS cleaner and more responsive.
 
+If I add the background image and use the position absolute on the body and the position relative on the contianer I realize that in desktop view the container is floating on the left side. I have tried to fix this but I haven't. I need to read up on position.
 
 ## Author
 
