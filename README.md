@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion solution
 
-This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -13,7 +13,6 @@ This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://w
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-
 
 ## Overview
 
@@ -46,7 +45,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-
 ### What I learned
 
 I learned how to use JS to do the dropdown options.
@@ -56,24 +54,29 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .accordion .question::after {
   content: url("./assets/images/icon-plus.svg");
   position: absolute;
   right: -5px;
-  
+}
+.body {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .accordion.active .question::after {
   content: url("./assets/images/icon-minus.svg");
-  transition: .5s;
- 
+  transition: 0.5s;
 }
 ```
-```js
-this.classList.toggle('active');
-```
 
+```js
+this.classList.toggle("active");
+```
 
 ### Continued development
 
@@ -84,4 +87,3 @@ If I add the background image and use the position absolute on the body and the 
 ## Author
 
 - Frontend Mentor - [@RoxySash](https://www.frontendmentor.io/profile/RoxySash)
-
