@@ -98,7 +98,7 @@ h6 {
 
 .star {
   align-self: center;
-  padding-right: 15px;
+  margin-inline-start: left;
 }
 
 .accordion-title {
