@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](assets\images\Screenshotaccordion.png)
+![Desktop View](.\assets\images\Screenshotaccordion.png)
 
-![Mobile View](assets\images\ScreenshotMobileaccordion.png)
+![Mobile View](.\assets\images\ScreenshotMobileaccordion.png)
 
 ### Links
 
