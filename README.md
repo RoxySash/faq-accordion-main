@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop View](Screenshot 2026-02-21 at 01-13-26 Frontend Mentor FAQ accordion.png)
+![Desktop View]()
 
-![Mobile View](....\assets\images\ScreenshotMobileaccordion.png)
+![Mobile View]()
 
 ### Links
 
