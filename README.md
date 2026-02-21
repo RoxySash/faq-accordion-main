@@ -29,7 +29,7 @@ Users should be able to:
 
 ![Desktop View](ScreenshotDesktop.png)
 
-![Mobile View]()
+![Mobile View](ScreenshotMobile.png)
 
 ### Links
 
